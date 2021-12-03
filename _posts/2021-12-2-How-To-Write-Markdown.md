@@ -147,3 +147,261 @@ For compatibility, use asterisks to bold and italicize the middle of a word for 
 ---
 
 ## Blockquotes
+
+```
+> Dorothy followed her through many of the beautiful rooms in her castle.
+```
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+
+---
+
+## Nested Blockquotes
+
+```
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+
+---
+
+## Blockquotes with Other Elements
+
+```
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+```
+
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
+Blockquotes can contain other Markdown formatted elements. Not all elements can be used — you’ll need to experiment to see which ones work.  
+For compatibility, put blank lines before and after blockquotes.  
+
+---
+
+## Ordered List
+
+```
+1. First item
+2. Second item
+3. Third item
+    1. Indented item
+    2. Indented item
+4. Fourth item
+```
+
+1. First item
+2. Second item
+3. Third item
+    1. Indented item
+    2. Indented item
+4. Fourth item
+
+To create an ordered list, add line items with numbers followed by periods. The numbers don’t have to be in numerical order, but the list should start with the number one.  
+
+---
+
+## Unordered List
+
+```
+- First item
+- Second item
+- Third item
+   * Indented item
+   * Indented item
+      + Deepest item
+      + Deepest item
+- Fourth item
+- 1968\. A great year!
+```
+
+- First item
+- Second item
+- Third item
+   * Indented item
+   * Indented item
+      + Deepest item
+      + Deepest item
+- Fourth item
+- 1968\. A great year!
+
+1. To create an unordered list, add dashes, asterisks, or plus signs in front of line items.
+2. Indent one or more items to create a nested list.
+3. If you need to start an unordered list item with a number followed by a period, you can use a backslash to escape the period.
+4. For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+
+---
+
+## Adding Elements in Lists
+
+### Paragraphs
+
+To add another element in a list while preserving the continuity of the list, indent the element ***four spaces*** or one tab, as shown in the following examples.  
+
+```
+* This is the first list item.
+* Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+* And here's the third list item.
+```
+
+* This is the first list item.
+* Here's the second list item.
+
+    I need to add another paragraph below the second list item.
+
+* And here's the third list item.
+
+### Blockquotes
+
+```
+* This is the first list item.
+* Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+* And here's the third list item.
+```
+
+* This is the first list item.
+* Here's the second list item.
+
+    > A blockquote would look great below the second list item.
+
+* And here's the third list item.
+
+### Code Blocks
+
+```
+1. Open the file.
+2. Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3. Update the title to match the name of your website.
+```
+
+1. Open the file.
+2. Find the following code block on line 21:
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+3. Update the title to match the name of your website.
+
+Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.  
+
+### Images
+
+```
+1. Open the file containing the Linux mascot.
+2. Marvel at its beauty.
+
+    ![Tux, the Linux mascot](/assets/images/tux.png)
+
+3. Close the file.
+```
+
+### Lists
+
+```
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+```
+
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    - Indented item
+4. Fourth item
+
+---
+
+## Code
+
+```
+`<p>Hellow world!</div>`
+```
+
+`<p>Hellow world!</div>`  
+
+To denote a word or phrase as code, enclose it in backticks
+
+### Escaping Backticks
+
+```
+``Use `code` in your Markdown file.``
+```
+
+``Use `code` in your Markdown file.``
+
+If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks  
+
+### Code Blocks
+
+__This is Markdown:__
+
+```
+    <html>
+        <head>
+        </head>
+    </html>
+```
+
+__This is output:__
+
+	<html>
+	  <head>
+	  </head>
+	</html>
+
+To create code blocks:  
+- indent every line of the block by at least four spaces or one tab
+- wrap your code blocks in triple backticks
+
+# Horizontal Rules
+
+```
+***
+
+---
+
+_________
+```
+
+The rendered output of all three looks identical:  
+
+***
+
+1. To create a horizontal rule, use three or more asterisks, dashes, or underscores on a line by themselves
+2. For compatibility, put blank lines before and after horizontal rules
+
+---
+
+## Links
