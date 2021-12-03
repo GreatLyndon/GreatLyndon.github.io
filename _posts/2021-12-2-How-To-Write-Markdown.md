@@ -405,3 +405,90 @@ The rendered output of all three looks identical:
 ---
 
 ## Links
+
+### Adding Titles
+
+```
+[Google](https://www.google.com "You are hoving over Google!")
+```
+
+[Google](https://www.google.com "You are hoving over Google!")  
+
+To add a title, enclose it in parentheses after the URL. This will appear as a tooltip when the user hovers over the link.  
+
+### URLs and Email Addresses
+
+```
+<https://www.markdownguide.org>
+<fake@example.com>
+```
+
+<https://www.markdownguide.org>  
+<fake@example.com>  
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets  
+
+### Formatting Links
+
+```
+I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).
+```
+
+I love supporting the **[EFF](https://eff.org)**.  
+This is the *[Markdown Guide](https://www.markdownguide.org)*.  
+See the section on [`code`](#code).  
+
+1. To emphasize links, add asterisks before and after the brackets and parentheses.
+2. To denote links as code, add backticks in the brackets.
+
+### Reference-style Links
+
+Reference-style links are a special kind of link that make URLs easier to display and read in Markdown  
+Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read  
+
+#### Formatting the First Part of the Link
+
+The first part of a reference-style link is formatted with two sets of brackets. The first set of brackets surrounds the text that should appear linked. The second set of brackets displays a label used to point to the link you’re storing elsewhere in your document.  
+
+```
+[hobbit-hole][1]
+```
+
+#### Formatting the Second Part of the Link
+
+The second part of a reference-style link is formatted with the following attributes:  
+
+1. The label, in brackets, followed immediately by a colon and at least one space
+2. The URL for the link, which you can optionally enclose in angle brackets
+3. The optional title for the link, which you can enclose in double quotes, single quotes, or parentheses
+
+You can place this second part of the link anywhere in your Markdown document  
+
+```
+[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+```
+
+#### An Example
+
+```
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole][1], and that means comfort.
+
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"
+```
+
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole][1], and that means comfort.   
+
+[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"  
+
+### Caveat
+
+Markdown applications don’t agree on how to handle spaces in the middle of a URL  
+For compatibility, try to URL encode any spaces with %20  
+
+## Image
