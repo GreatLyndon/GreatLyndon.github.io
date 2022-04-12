@@ -10,14 +10,52 @@ At first sight, I was amazed by this cool language, and then I thought I should 
 Anyway, we can start the main content from now.  
 > All the techniques are from [Markdown Guide](https://markdownguide.org)  
 
+-----
+
 ## Basic Syntax
 
 ### Heading
+
+To create a heading, you have two ways:
+1. Add number signs(#) in front of a word of phrase
+2. Add == characters for heading level 1 or -- characters for heading level 2
 
 ```
 # H1
 ## H2
 ### H3
+```
+
+```
+H1
+===
+H2
+---
+```
+
+For compatibility, you should know:
+1. put a space between the number signs and the heading name
+2. put blank lines before and after a heading
+
+### Paragrap
+
+To create paragraphs, use a blank line to separate one or more lines of text.
+
+```
+p1
+
+p2
+```
+
+Unless the paragraph is in a list, don't indent paragraphs with spaces or tabs.
+
+> If you need to indent paragraphs in the output, see the section on how to indent(tab).
+
+To create a line break or new line(like HTML br tag), end a line with two or more spaces, and then type return.
+
+```
+This is the first line.  
+And this is the second line.
 ```
 
 ### Bold
