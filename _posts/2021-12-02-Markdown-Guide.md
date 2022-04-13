@@ -58,16 +58,53 @@ This is the first line.
 And this is the second line.
 ```
 
-### Bold
+### Emphasis
+
+#### Bold
+
+To bold text, add two asterisks or underscores before and after a word or phrase.
 
 ```
 **bold text**
+__bold text__
 ```
 
-### Italic
+Markdown applications don’t agree on how to handle underscores in the middle of a word. Use asterisks to bold the middle of a word for emphasis.
+
+Love**is**bold
+
+```
+Love**is**bold
+```
+
+#### Italic
+
+To italicize text, add one asterisk or underscore before and after a word or phrase.  
+To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters like bold above.
+
+*italicized text*  
+_italicized text_  
+A*cat*meow
 
 ```
 *italicized text*
+_italicized text_
+A*cat*meow
+```
+
+#### Bold and Italic
+
+To emphasize text with bold and italics at the same time, add three asterisks or underscores before and after a word or phrase.  
+To bold and italicize the middle of a word for emphasis, add three asterisks without spaces around the letters.
+
+***bold and italic***  
+___bold and italic___  
+bold***and***italic
+
+```
+***bold and italic***
+___bold and italic___
+bold***and***italic
 ```
 
 ### Blockquote
