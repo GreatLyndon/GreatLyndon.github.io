@@ -82,8 +82,6 @@ Love**is**bold
 To italicize text, add one asterisk or underscore before and after a word or phrase.  
 To italicize the middle of a word for emphasis, add one asterisk without spaces around the letters like bold above.
 
-*italicized text*  
-_italicized text_  
 A*cat*meow
 
 ```
@@ -107,13 +105,71 @@ ___bold and italic___
 bold***and***italic
 ```
 
-### Blockquote
+### Blockquotes
+
+To create a blockquote, add a > in front of a paragraph.  
+For compatibility, put blank lines before and after blockquotes.
+
+> blockquote
 
 ```
 > blockquote
 ```
 
-### Ordered List
+#### Blockquotes with Multiple Paragraphs
+
+To create multiple paragraphs in blockquotes, add a > on the blank lines between the paragraphs.
+
+> First paragraph
+>
+> Second paragraph
+
+```
+> First paragraph
+>
+> Second paragraph
+```
+
+#### Nested Blockquotes
+
+Blockquotes can be nested.
+
+> outter blockquote
+>
+>> Inner blockquote
+
+```
+> outter blockquote
+>
+>> Inner blockquote
+```
+
+#### Blockquotes with Other Elements
+
+Blockquotes can contain other Markdown formatted elements.  
+But **not all elements** can be used -- you'll need to experiment to see which ones work.
+
+> ### Heading level 3 in blockquote
+>
+> - item 1
+> - item 2
+
+```
+> ### Heading level 3 in blockquote
+>
+> - item 1
+> - item 2
+```
+
+### Lists
+
+#### Ordered List
+
+To create an ordered list, add line items with numbers followed by periods. The numbers don't have to be in numerical order, but **the list sould start with the number one**.
+
+1. First item
+2. Second item
+3. Third item
 
 ```
 1. First item
@@ -121,12 +177,71 @@ bold***and***italic
 3. Third item
 ```
 
-### unordered List
+#### unordered List
+
+To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list.  
+For compatibility, don’t mix and match delimiters in the same list — pick one and stick with it.
+
+- First item
+- Second item
+- Third item
+	- Indented item
 
 ```
 - First item
 - Second item
 - Third item
+	- Indented item
+```
+
+If you need to start an unordered list item with a number followed by a period, you can use a backslash (\) to escape the period.
+
+- 1968\. A great year!
+
+```
+- 1968\. A great year!
+```
+
+#### Adding Elements in Lists
+
+To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab.
+
+- This is the first list item
+
+    This is the paragraph element
+
+- This is the second list item
+
+```
+- This is the first list item
+
+    This is the paragraph element
+
+- This is the second list item
+```
+
+Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
+
+1. list item 1
+
+        <html>
+            <head>
+                <title>Title</title>
+            </head>
+        </html>
+
+2. list item 2
+
+```
+1. list item 1
+
+        <html>
+            <head>
+                <title>Title</title>
+            </head>
+        </html>
+
+2. list item 2
 ```
 
 ### Code
@@ -284,3 +399,4 @@ x<sup>2</sup>
 x^2^
 x<sup>2</sup>
 ```
+
