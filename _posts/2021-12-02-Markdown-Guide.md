@@ -246,27 +246,146 @@ Code blocks are normally indented four spaces or one tab. When they’re in a li
 
 ### Code
 
+To denote a word or phrase as code, enclose it in backticks (`).
+
+In JavaScript, you can print with `console.log()`.
+
+#### Escaping Backticks
+
+If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+
 ```
-`code`
+``Use `code` in your Markdown file.``
 ```
 
-### Horizontal Rule
+#### Code Blocks
+
+To create code blocks, indent every line of the block by at least four spaces or one tab.
+
+```
+    <html>
+        <head>
+        </head>
+    </html>
+```
+
+Or use fenced code blocks
+
+````
+```
+<html>
+    <head>
+    </head>
+</html>
+```
+````
+
+### Horizontal Rules
+
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.  
+For compatibility, put blank lines before and after horizontal rules.
 
 ```
 ---
+
+***
+
+___
 ```
 
-### Link
+### Links
 
 ```
 [title](https://www.example.com)
 ```
 
-### Image
+> TO link to an element on the same page, see linking to heading IDs.
+
+> To create a link that opens in a new tab or window, see the section on link targets.
+
+#### Adding Titles
+
+You can optionally add a title for a link which will appear as a tooltip when the user hovers over the link.
+
+```
+[title](http://www.example.com "tooltip!")
+```
+
+#### URLs and Email Addresses
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+```
+<https://www.example.com>
+<fake@example.com>
+```
+
+#### Formatting Links
+
+To emphasize links, add asterisks before and after the brackets and parentheses.  
+TO denote links as code, add backticks in the brackets.
+
+```
+**[title](http://example.com)**
+[`code`](http://example.com)
+```
+
+#### Reference-style Links
+
+Reference-style links are constructed in two parts: the part you keep inline with your text and the part you store somewhere else in the file to keep the text easy to read.
+
+```
+[example][1]
+
+[1]: https://example.com "example tooltip"
+```
+
+### Images
 
 ```
 ![alt text](image.jpg)
 ```
+
+#### Linking Images
+
+```
+[![title](path "description")](link)
+```
+
+### Escaping Characters
+
+To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\) in front of the character.
+
+```
+\* Without the backslash, this would be a bullet in an unordered list.
+```
+
+#### Characters You Can Escape
+
+| Character | Name |
+| \\ | backslash |
+| \` | backtick|
+| \* | asterisk |
+| - | underscore |
+| \{\} | curly braces |
+| \[\] | brackets |
+| \<\> | angle brackets |
+| \(\) | parentheses |
+| \# | pound sign|
+| \+ | plus sign|
+| \- | minus sign (hyphen) |
+| \. | dot |
+| \! | exclamation mark |
+| \| | pipe |
+
+### HTML
+
+Many Markdown applications allow you to use HTML tags in Markdown-formatted text.  
+For security reasons, not all Markdown applications support HTML in Markdown documents.  
+There are things you need to know:
+- Use blank lines to separate block-level HTML elements from the surrounding content.
+- Try not to indent the tags with tabs or spaces — that can interfere with the formatting.
+- You can’t use Markdown syntax inside block-level HTML tags.
 
 ## Extended Syntax
 
